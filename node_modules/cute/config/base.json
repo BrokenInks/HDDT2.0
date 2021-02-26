@@ -1,0 +1,20 @@
+{
+  "lighterRun": {
+    "minRestartDelay": 500,
+    "maxRestartDelay": 5000,
+    "restartDelayBackoff": 2,
+    "cleanTime": 2000,
+    "ignore": [
+      ".DS_Store",
+      ".cache",
+      ".git",
+      ".idea",
+      ".project",
+      "coverage",
+      "cute.js",
+      "cute.concat.js",
+      "cute.common.js"
+    ],
+    "watchDirs": null
+  }
+}
