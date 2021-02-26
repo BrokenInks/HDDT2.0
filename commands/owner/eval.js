@@ -4,7 +4,7 @@ const Discord = require('discord.js');
 module.exports = {
     name: 'eval',
     category: 'owner',
-    execute(message, args, client) {
+    async execute(message, args, client) {
         let code = args.join(" ");
     try {
       let evaled = await eval(code);
