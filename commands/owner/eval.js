@@ -5,14 +5,14 @@ async execute(message, args, client) {
         let evaled = await eval(code);
         if (typeof evaled !== "string") evaled = require("util").inspect(evaled);
 
-        message.channel.send(["Код исполнен за " + `${Date.now() - message.createdTimestamp}` + "ms\n" + evaled], { code: "js" })
+        message.send(["Код исполнен за " + `${Date.now() - message.createdTimestamp}` + "ms\n" + evaled], { code: "js" })
     } catch(e) {
         if (typeof(e) == "string") e = e.replace(/`/g, "`" + String.fromCharCode(8203)).replace(/@/g, "@" + String.fromCharCode(8203))
         let evalerror = new global.embed()
             .setTitle("Произошла ошибка")
             .setDescription("`​``" + e + "`​``")
             .setColor(cfg.colors.error)
-        message.channel.send(evalerror)
+        message.send(evalerror)
 
     }
 }
