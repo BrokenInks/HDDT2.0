@@ -2,7 +2,7 @@ const { Client } = require("discord.js");
 const { MessageEmbed } = require("discord.js");
 const Discord = require('discord.js');
 module.exports = {
-    name: 'reload',
+    name: 'r',
     category: 'owner',
     execute(message, args, client) {
         if (message.author.id !=="778512157926883328") return message.channel.send("No, this owner command");
