@@ -5,7 +5,7 @@ module.exports = {
     execute(message, args, client) {
         const baskEmbed = new Discord.MessageEmbed()
             .setColor('#DAF7A6')
-            .setTitle('Другое')
+            .setTitle('Инфо')
             .setDescription('hd.about - Информация о боте\n hd.ping - Пинг бота\n ut - Uptime, Аптайм бота\n hd.user - Информация о пользователе')
             .setURL('')
             .setAuthor(message.author.username, message.author.avatarURL(), 'https://discord.js.org/%27')
