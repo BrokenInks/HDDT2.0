@@ -1,5 +1,4 @@
 const { Client } = require("discord.js");
-const ms = require('ms');
 module.exports = {
     name: 'ut',
     cooldown: 5,
