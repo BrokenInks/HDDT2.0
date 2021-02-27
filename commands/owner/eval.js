@@ -16,7 +16,7 @@ module.exports = {
       .setTitle("Произошла ошибка")
       .setDescription("`​``" + e + "`​``")
       .setColor(cfg.colors.error)
-      message.reply(evalerror)
+      message.channel.send(evalerror)
       
       }
     }
