@@ -19,10 +19,10 @@ const cooldowns = new Discord.Collection();
 
 client.once('ready', () => {
 	console.log('{DZ}HDDDT запустился!');
-	console.log('Создатель бота: BrokenInk#1212')
+	console.log('Создатель бота BrokenInk#1212')
 	setInterval(function(){
 		let stausi = [
-	  'My Owner: BrokenInk#1212'
+			`За ${client.guilds.cache.size} Серверами || hd.help`
 		]
 		let aye_status = stausi[Math.floor(Math.random() * stausi.length)]
 		
